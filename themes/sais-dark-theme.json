@@ -1,0 +1,90 @@
+{
+    "name": "SAIS Dark Theme",
+    "colors": {
+        "editor.background": "#1E1E1E",
+        "editor.foreground": "#D4D4D4"
+    },
+    "tokenColors": [
+        {
+            "scope": "constant.datetime.sais",
+            "settings": {
+                "foreground": "#FF5722"
+            }
+        },
+        {
+            "scope": "constant.time.sais",
+            "settings": {
+                "foreground": "#FF5722"
+            }
+        },
+        {
+            "scope": "constant.date.sais",
+            "settings": {
+                "foreground": "#FF5722"
+            }
+        },
+        {
+            "scope": "constant.numeric.sais",
+            "settings": {
+                "foreground": "#8BC34A"
+            }
+        },
+        {
+            "scope": "constant.url.sais",
+            "settings": {
+                "foreground": "#89DDFF"
+            }
+        },
+        {
+            "scope": "keyword.control.sais",
+            "settings": {
+                "foreground": "#f844ae",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "keyword.other.sais",
+            "settings": {
+                "foreground": "#FFC107",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "keyword.type.sais",
+            "settings": {
+                "foreground": "#82AAFF",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "constant.language.sais",
+            "settings": {
+                "foreground": "#F78C6C"
+            }
+        },
+        {
+            "scope": "string.quoted.double.sais",
+            "settings": {
+                "foreground": "#C3E88D"
+            }
+        },
+        {
+            "scope": "variable.other.sais",
+            "settings": {
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "scope": "comment.block.sais",
+            "settings": {
+                "foreground": "#546E7A"
+            }
+        },
+        {
+            "scope": "comment.line.double-slash.sais",
+            "settings": {
+                "foreground": "#546E7A"
+            }
+        }
+    ]
+}

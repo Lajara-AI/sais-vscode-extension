@@ -1,0 +1,53 @@
+{
+  "name": "sais-syntax-highlight",
+  "displayName": "SAIS Syntax Highlight",
+  "description": "Syntax highlighting for Safe AI Script (SAIS)",
+  "version": "0.1.0",
+  "publisher": "LajaraAI",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Lajara-AI/sais-vscode-extension"
+  },
+  "keywords": [
+      "sais",
+      "syntax highlighting",
+      "safe ai script",
+      "lajara ai"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sais",
+        "aliases": ["Safe AI Script (SAIS)", "sais"],
+        "extensions": [".sais"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sais",
+        "scopeName": "source.sais",
+        "path": "./syntaxes/sais.tmLanguage.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "SAIS Light Theme",
+        "uiTheme": "vs",
+        "path": "./themes/sais-light-theme.json"
+      },
+      {
+        "label": "SAIS Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sais-dark-theme.json"
+      }
+    ]
+  }
+}
