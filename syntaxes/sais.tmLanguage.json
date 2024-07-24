@@ -3,16 +3,25 @@
 	"fileTypes": ["sais"],
 	"patterns": [
 		{
-		  "match": "\\b(after|and|any|as|assert|async|await|before|break|case|catch|continue|default|do|else|end|enum|fail|finally|for|if|in|is|new|not|number|or|override|pass|pause|private|protected|public|return|resume|routine|start|static|stop|try|until|wait|When|while|yield)\\b",
-		  "name": "keyword.control.sais"
+			"begin": "\"\"\"",
+			"end": "\"\"\"",
+			"name": "comment.block.sais"
 		},
 		{
-		  "match": "\\b(bool|callable|date|datetime|float|int|text|time|url)\\b",
-		  "name": "keyword.type.sais"
+		  "match": "\\b(after|and|any|as|assert|await|before|break|case|catch|continue|default|do|else|end|enum|fail|finally|for|if|in|is|new|not|or|pass|pause|return|resume|routine|star|stop|test|try|until|wait|When|while|yield)\\b",
+		  "name": "keyword.control.sais"
 		},
 		{
 			"match": "\\b(debug|error|info|input|log|print|warn)\\b",
 			"name": "keyword.other.sais"
+		},
+		{
+		  "match": "\\b(bool|callable|date|datetime|float|int|number|str|temporal|time|url)\\b",
+		  "name": "storage.type.sais"
+		},
+		{
+		  "match": "\\b(async|final|private|protected|public|static|override)\\b",
+		  "name": "storage.modifier.sais"
 		},
 		{
 			"match": "\\b([0-9]+\\.[0-9]+)\\b",
@@ -43,21 +52,27 @@
 			"name": "constant.url.sais"
 		},
 		{
-			"match": "\\\"(.*?)\\\"",
-			"name": "string.quoted.double.sais"
+			"begin": "\"",
+			"end": "\"|\n",
+			"name": "string.quoted.double.sais",
+		  	"patterns": [
+				{
+					"match": "\\\\.",
+					"name": "constant.character.escape.sais"
+				}
+		  	]
+		},
+		{
+			"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\s*\\(",
+			"name": "keyword.other.sais"
 		},
 		{
 			"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b",
 			"name": "variable.other.sais"
 		},
 		{
-			"begin": "/\\*",
-			"end": "\\*/",
-			"name": "comment.block.sais"
-		},
-		{
-			"match": "\\/\\/.*?$",
-			"name": "comment.line.double-slash.sais"
+			"match": "#.*?$",
+			"name": "comment.line.sais"
 		}
 	],
 	"repository": {},

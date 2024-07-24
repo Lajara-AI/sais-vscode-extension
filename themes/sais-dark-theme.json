@@ -50,7 +50,14 @@
             }
         },
         {
-            "scope": "keyword.type.sais",
+            "scope": "storage.type.sais",
+            "settings": {
+                "foreground": "#82AAFF",
+                "fontStyle": "bold"
+            }
+        },
+        {
+            "scope": "storage.modifier.sais",
             "settings": {
                 "foreground": "#82AAFF",
                 "fontStyle": "bold"
@@ -69,6 +76,12 @@
             }
         },
         {
+            "scope": "constant.character.escape.sais",
+            "settings": {
+                "foreground": "#FF5370"
+            }
+        },
+        {
             "scope": "variable.other.sais",
             "settings": {
                 "foreground": "#ffffff"
@@ -81,7 +94,7 @@
             }
         },
         {
-            "scope": "comment.line.double-slash.sais",
+            "scope": "comment.line.sais",
             "settings": {
                 "foreground": "#546E7A"
             }

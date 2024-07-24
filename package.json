@@ -2,7 +2,7 @@
   "name": "sais-syntax-highlight",
   "displayName": "SAIS Syntax Highlight",
   "description": "Syntax highlighting for Safe AI Script (SAIS)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "LajaraAI",
   "engines": {
     "vscode": "^1.0.0"
